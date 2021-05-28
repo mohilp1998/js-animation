@@ -1,2 +1,2 @@
 # js-animation
-Creating an animation using JS
+An animation using JS: https://mohilp1998.github.io/js-animation/
