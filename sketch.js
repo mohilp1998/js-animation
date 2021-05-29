@@ -1,9 +1,13 @@
 var elements;
-var noOfElements = 150;
+
 function setup() {
     var myCanvas = createCanvas(windowWidth, windowHeight);
     myCanvas.style('display', 'block');
 
+    var noOfElements = 150;
+    if ((windowWidth < 500) || (windowHeight < 750)){
+        noOfElements = 100;
+    }
     elements = new Array(noOfElements);
     for (var index = 0; index < elements.length; index++) {
         elements[index] = new Element();

@@ -1,7 +1,7 @@
 maxRadius = 7;
-maxVel = 0.15;
+maxVel = 1;
 borderFactor = 12;
-transFactor = 0.1;
+transFactor = 0.2;
 
 class Element{
     // Constructing an basic element i.e. a circle
@@ -12,7 +12,7 @@ class Element{
         this.vel.x = this.vel.x * velMag;
         this.vel.y = this.vel.y * velMag;
         this.radius = random(maxRadius)+ 5;
-        this.transparency = random(0.7);
+        this.transparency = random(0.2, 0.7);
         this.maxDist = sqrt(sq(width/borderFactor) + sq(height/borderFactor));
     }
 
